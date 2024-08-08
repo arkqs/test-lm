@@ -1,11 +1,11 @@
 <div class="product-list">
-    <h1>Liste des produits</h1>
-    <div *ngIf="produits.length > 0; else noData">
-          <div *ngFor="let produit of produits">
-            {{ produit.nom }} - {{ produit.prix }}€
-          </div>
-      </div>
-      <ng-template #noData>
-        <p>Aucun produit disponible.</p>
-      </ng-template>
+  <h1>Liste des produits</h1>
+  <div *ngIf="produits.length > 0; else noData">
+    <div *ngFor="let produit of produits">
+      {{ produit.nom }} - {{ produit.prix }}€
+    </div>
+  </div>
+  <ng-template #noData>
+    <p>Aucun produit disponible.</p>
+  </ng-template>
 </div>

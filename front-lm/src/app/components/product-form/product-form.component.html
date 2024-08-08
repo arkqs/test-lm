@@ -1,9 +1,16 @@
 <div class="product-form">
-    <h1>Ajouter un produit</h1>
-    <label for="nom">Nom</label>
-    <input name="nom" type="text" [(ngModel)]="nom" placeholder="Nom du produit"/>
-    <label for="prix">Prix</label>
-    <input name="prix" type="number" [(ngModel)]="prix"/>
-    <p class="error" *ngIf="showError">Erreur : veuillez entrer des paramètres valides</p>
-    <button (click)="sendProduct()">Valider</button>
+  <h1>Ajouter un produit</h1>
+  <label for="nom">Nom</label>
+  <input
+    name="nom"
+    type="text"
+    [(ngModel)]="nom"
+    placeholder="Nom du produit"
+  />
+  <label for="prix">Prix</label>
+  <input name="prix" type="number" [(ngModel)]="prix" />
+  <p class="error" *ngIf="showError">
+    Erreur : veuillez entrer des paramètres valides
+  </p>
+  <button (click)="sendProduct()">Valider</button>
 </div>
