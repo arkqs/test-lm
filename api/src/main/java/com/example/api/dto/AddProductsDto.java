@@ -15,7 +15,5 @@ public class AddProductsDto {
     }
     public void setPrix(float prix) {
         this.prix = prix;
-    }
-
-    
+    }    
 }
